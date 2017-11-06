@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.utskalkulatorgeometrinlr.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Pilih Bangun Datar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"/>
+
+    <Spinner
+        android:id="@+id/spinPilihan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtBil1"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignRight="@+id/txtBil1"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:id="@+id/txt_luas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil Luas"
+        android:layout_marginBottom="27dp"
+        android:layout_alignBottom="@+id/txt_keliling"
+        android:layout_alignLeft="@+id/txt_keliling"
+        android:layout_alignStart="@+id/txt_keliling" />
+
+    <TextView
+        android:id="@+id/txt_keliling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/btnHitungBangun"
+        android:layout_marginTop="60dp"
+        android:text="Hasil Keliling" />
+
+    <EditText
+        android:id="@+id/txtBil1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtBil2"
+        android:layout_alignLeft="@+id/txtBil2"
+        android:layout_alignRight="@+id/txtBil2"
+        android:layout_alignStart="@+id/txtBil2"
+        android:layout_below="@+id/spinPilihan"
+        android:layout_marginTop="30dp"
+        android:hint="Input (Panjang/Jari - jari/Alas)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/txtBil2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Input (Lebar/Tinggi)"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/txtBil1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+    <Button
+        android:id="@+id/btnHitungBangun"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtBil2"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Hitung Bangun" />
+
+</RelativeLayout>
